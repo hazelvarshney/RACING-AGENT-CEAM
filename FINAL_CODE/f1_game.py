@@ -69,7 +69,7 @@ def draw_track(surface, grid):
                         rect = pygame.Rect(c * CELL, r * CELL, CELL, CELL)
                         stripe = ((r + c) % 2 == 0)
                         color  = C_KERB1 if stripe else C_KERB2
-                        pygame.draw.rect(surface, color, rect)  # solid fill
+                        pygame.draw.rect(surface, color, rect)  
 
 
 def draw_f1_car(surface, x, y, angle_deg):
@@ -170,7 +170,6 @@ def draw_hud(surface, car, font, font_small):
     surface.blit(spd_text,  (20, 50))
     surface.blit(ctrl_text, (20, SCREEN_H - 30))
 
-    # speed bar
     bar_w = int((abs(car.speed) / MAX_SPEED) * 200)
     pygame.draw.rect(surface, (60, 60, 60),   pygame.Rect(20, 85, 200, 12), border_radius=4)
     pygame.draw.rect(surface, (220, 30, 30),  pygame.Rect(20, 85, bar_w, 12), border_radius=4)
