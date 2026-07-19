@@ -49,5 +49,5 @@ about.
 
 Initially, I did not assign a penalty for staying idle, which lead to the car
 avoiding the -0.5 crashing penalty by just not moving at all. I later added a 
--0.1 penalty whenever the car stays idle so that it keeps moving.
+-0.1 penalty whenever the car stays idle so that it keeps making progress.
 
